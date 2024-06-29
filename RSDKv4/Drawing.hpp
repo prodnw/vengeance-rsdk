@@ -138,6 +138,10 @@ void DrawAlphaBlendedSprite(int XPos, int YPos, int width, int height, int sprX,
 void DrawAdditiveBlendedSprite(int XPos, int YPos, int width, int height, int sprX, int sprY, int alpha, int sheetID);
 void DrawSubtractiveBlendedSprite(int XPos, int YPos, int width, int height, int sprX, int sprY, int alpha, int sheetID);
 
+void DrawAlphaBlendedSpriteRotated(int direction, int XPos, int YPos, int pivotX, int pivotY, int sprX, int sprY, int width, int height, int rotation, int alpha,
+                       int sheetID);
+void DrawAlphaBlendedSpriteFlipped(int XPos, int YPos, int width, int height, int sprX, int sprY, int direction, int alpha, int sheetID);
+
 void DrawObjectAnimation(void *objScr, void *ent, int XPos, int YPos);
 
 void DrawFace(void *v, uint color);
