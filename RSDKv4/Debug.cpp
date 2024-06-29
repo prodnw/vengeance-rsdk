@@ -503,7 +503,7 @@ void SetTextMenu(int sm)
     SetupTextMenu(&gameMenu[1], 0);
     switch (sm) {
         case DEVMENU_MAIN: {
-            AddTextMenuEntry(&gameMenu[0], "RETRO ENGINE DEV MENU");
+            AddTextMenuEntry(&gameMenu[0], Engine.gameWindowText "DEV MENU");
             AddTextMenuEntry(&gameMenu[0], " ");
             char version[0x80];
             StrCopy(version, Engine.gameWindowText);
@@ -524,7 +524,7 @@ void SetTextMenu(int sm)
             AddTextMenuEntry(&gameMenu[0], "STAGE SELECT");
 #if !RETRO_USE_ORIGINAL_CODE
             AddTextMenuEntry(&gameMenu[0], " ");
-            AddTextMenuEntry(&gameMenu[0], "START MENU");
+            AddTextMenuEntry(&gameMenu[0], "HW MENU");
 #if RETRO_USE_MOD_LOADER
             AddTextMenuEntry(&gameMenu[0], " ");
             AddTextMenuEntry(&gameMenu[0], "MODS");

@@ -54,7 +54,7 @@ int InitRenderDevice()
 {
     char gameTitle[0x40];
 
-    sprintf(gameTitle, "%s%s", Engine.gameWindowText, Engine.usingDataFile_Config ? "" : " (Using Data Folder)");
+    sprintf(gameTitle, "%s%s", Engine.gameWindowText, Engine.usingDataFile_Config ? "" : "");
 
 #if !RETRO_USE_ORIGINAL_CODE
 #if RETRO_USING_SDL2
@@ -4549,7 +4549,7 @@ void DrawTexturedFace(void *v, byte sheetID)
 #if RETRO_REV02
             int counter = posDifference;
 #else
-            int counter = posDifference + 1;
+            int counter = posDifference;
 #endif
             while (counter--) {
                 if (UPos < 0)
@@ -4682,7 +4682,7 @@ void DrawTexturedFaceBlended(void *v, byte sheetID)
 #if RETRO_REV02
             int counter = posDifference;
 #else
-            int counter = posDifference + 1;
+            int counter = posDifference;
 #endif
             while (counter--) {
                 if (UPos < 0)
