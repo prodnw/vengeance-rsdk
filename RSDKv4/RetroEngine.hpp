@@ -444,7 +444,7 @@ public:
 #ifdef DECOMP_VERSION
     const char *gameVersion = DECOMP_VERSION;
 #else
-    const char *gameVersion  = "RSDKV4";
+    const char *gameVersion  = "v4";
 #endif
     const char *gamePlatform = nullptr;
 

@@ -4549,7 +4549,7 @@ void DrawTexturedFace(void *v, byte sheetID)
 #if RETRO_REV02
             int counter = posDifference;
 #else
-            int counter = posDifference;
+            int counter = posDifference + 1;
 #endif
             while (counter--) {
                 if (UPos < 0)
@@ -4682,7 +4682,7 @@ void DrawTexturedFaceBlended(void *v, byte sheetID)
 #if RETRO_REV02
             int counter = posDifference;
 #else
-            int counter = posDifference;
+            int counter = posDifference + 1;
 #endif
             while (counter--) {
                 if (UPos < 0)
